@@ -1,0 +1,157 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for transpiled/benchmark/large_projects/javascript-algorithms/src/algorithms/sets/permutations/__test__/permutateWithoutRepetitions.test.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../../../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../../../../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../../../../../../../index.html">All files</a> / <a href="index.html">transpiled/benchmark/large_projects/javascript-algorithms/src/algorithms/sets/permutations/__test__</a> permutateWithoutRepetitions.test.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/21</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/4</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/3</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/21</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">"use strict";
+&nbsp;
+var _permutateWithoutRepetitions = <span class="cstat-no" title="statement not covered" >_interopRequireDefault(require("../permutateWithoutRepetitions"));</span>
+var _factorial = <span class="cstat-no" title="statement not covered" >_interopRequireDefault(require("../../../math/factorial/factorial"));</span>
+function <span class="fstat-no" title="function not covered" >_interopRequireDefault(</span>e) { <span class="cstat-no" title="statement not covered" >return e &amp;&amp; e.__esModule ? e : { default: e }; </span>}
+<span class="cstat-no" title="statement not covered" >describe('permutateWithoutRepetitions', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  it('should permutate string', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+    const permutations1 = <span class="cstat-no" title="statement not covered" >(0, _permutateWithoutRepetitions.default)(['A']);</span>
+<span class="cstat-no" title="statement not covered" >    expect(permutations1).toEqual([['A']]);</span>
+    const permutations2 = <span class="cstat-no" title="statement not covered" >(0, _permutateWithoutRepetitions.default)(['A', 'B']);</span>
+<span class="cstat-no" title="statement not covered" >    expect(permutations2.length).toBe(2);</span>
+<span class="cstat-no" title="statement not covered" >    expect(permutations2).toEqual([['A', 'B'], ['B', 'A']]);</span>
+    const permutations6 = <span class="cstat-no" title="statement not covered" >(0, _permutateWithoutRepetitions.default)(['A', 'A']);</span>
+<span class="cstat-no" title="statement not covered" >    expect(permutations6.length).toBe(2);</span>
+<span class="cstat-no" title="statement not covered" >    expect(permutations6).toEqual([['A', 'A'], ['A', 'A']]);</span>
+    const permutations3 = <span class="cstat-no" title="statement not covered" >(0, _permutateWithoutRepetitions.default)(['A', 'B', 'C']);</span>
+<span class="cstat-no" title="statement not covered" >    expect(permutations3.length).toBe((0, _factorial.default)(3));</span>
+<span class="cstat-no" title="statement not covered" >    expect(permutations3).toEqual([['A', 'B', 'C'], ['B', 'A', 'C'], ['B', 'C', 'A'], ['A', 'C', 'B'], ['C', 'A', 'B'], ['C', 'B', 'A']]);</span>
+    const permutations4 = <span class="cstat-no" title="statement not covered" >(0, _permutateWithoutRepetitions.default)(['A', 'B', 'C', 'D']);</span>
+<span class="cstat-no" title="statement not covered" >    expect(permutations4.length).toBe((0, _factorial.default)(4));</span>
+<span class="cstat-no" title="statement not covered" >    expect(permutations4).toEqual([['A', 'B', 'C', 'D'], ['B', 'A', 'C', 'D'], ['B', 'C', 'A', 'D'], ['B', 'C', 'D', 'A'], ['A', 'C', 'B', 'D'], ['C', 'A', 'B', 'D'], ['C', 'B', 'A', 'D'], ['C', 'B', 'D', 'A'], ['A', 'C', 'D', 'B'], ['C', 'A', 'D', 'B'], ['C', 'D', 'A', 'B'], ['C', 'D', 'B', 'A'], ['A', 'B', 'D', 'C'], ['B', 'A', 'D', 'C'], ['B', 'D', 'A', 'C'], ['B', 'D', 'C', 'A'], ['A', 'D', 'B', 'C'], ['D', 'A', 'B', 'C'], ['D', 'B', 'A', 'C'], ['D', 'B', 'C', 'A'], ['A', 'D', 'C', 'B'], ['D', 'A', 'C', 'B'], ['D', 'C', 'A', 'B'], ['D', 'C', 'B', 'A']]);</span>
+    const permutations5 = <span class="cstat-no" title="statement not covered" >(0, _permutateWithoutRepetitions.default)(['A', 'B', 'C', 'D', 'E', 'F']);</span>
+<span class="cstat-no" title="statement not covered" >    expect(permutations5.length).toBe((0, _factorial.default)(6));</span>
+  });
+});</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2024-12-02T22:10:52.092Z
+            </div>
+        <script src="../../../../../../../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../../../../../../../sorter.js"></script>
+        <script src="../../../../../../../../../block-navigation.js"></script>
+    </body>
+</html>
+    
